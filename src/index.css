@@ -1,6 +1,7 @@
 /* HTML tag Selectors */
 * {
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -8,6 +9,25 @@ body {
 }
 
 /* Class selectors */
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-text {
+    padding-left: 40px;
+}
+
+.hero-text > p {
+    width: 320px;
+}
+
+
 .navbar {
     align-items: center;
     display: flex;
@@ -16,6 +36,12 @@ body {
 }
 
 /* ID selectors */
+#hero-img {
+    align-self: center;
+    max-width: 400px;
+    padding-top: 30px;
+}
+
 #navbar-logo {
     max-width: 100px;
 }
