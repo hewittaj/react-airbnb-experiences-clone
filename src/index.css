@@ -6,9 +6,45 @@
 
 body {
     margin: 0;
+    padding: 0;
 }
 
 /* Class selectors */
+.card {
+    padding-bottom: 30px;
+    padding-left: 40px;
+}
+
+.card-details {
+    font-size: 12px;
+}
+
+.card-details > p {
+    margin: 8px 0px;
+}
+
+.card-photo {
+    border-radius: 9px;
+    margin: 0;
+    max-width: 180px;
+}
+
+.card-rating {
+    padding-right: 4px;
+}
+
+.card-rating-count-and-location {
+    color: #918E9B;
+}
+
+.card-rating-info {
+    align-items: center;
+    display: flex;
+    font-size: 12px;
+    max-height: 14px;
+    text-align: center;
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -17,6 +53,7 @@ body {
 .hero {
     display: flex;
     flex-direction: column;
+    padding-bottom: 50px;
 }
 
 .hero-text {
@@ -27,7 +64,6 @@ body {
     width: 320px;
 }
 
-
 .navbar {
     align-items: center;
     display: flex;
@@ -36,6 +72,11 @@ body {
 }
 
 /* ID selectors */
+#card-star {
+    max-width: 15px;
+    margin-right: 6px;
+}
+
 #hero-img {
     align-self: center;
     max-width: 400px;
