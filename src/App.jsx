@@ -8,6 +8,7 @@ function App() {
   const cards = cardData.map((data) => {
     return (
       <Card 
+        key={data.id} // Must have key to get rid of warning
         id={data.id}
         title={data.title}
         description={data.description}
@@ -26,7 +27,9 @@ function App() {
     <div className='container'>
       <Navbar/>
       <Hero/>
-      {cards}
+      <section className='cards-list'>
+          {cards}
+      </section>
     </div>
   )
 }

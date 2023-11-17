@@ -45,6 +45,11 @@ body {
     text-align: center;
 }
 
+.cards-list {
+    display: flex;
+    overflow: scroll;
+}
+
 .container {
     display: flex;
     flex-direction: column;
