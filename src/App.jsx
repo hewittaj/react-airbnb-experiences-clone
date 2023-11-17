@@ -9,16 +9,7 @@ function App() {
     return (
       <Card 
         key={data.id} // Must have key to get rid of warning
-        id={data.id}
-        title={data.title}
-        description={data.description}
-        price={data.price}
-        img={data.coverImg}
-        stats={data.stats}
-        rating={data.stats.rating}
-        reviewCount={data.stats.reviewCount}
-        location={data.location}
-        openSpots={data.openSpots}
+        item={data}
       />
     )
   })
